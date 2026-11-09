@@ -4,9 +4,10 @@
 
 name: Create Git tag
 
-on:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+# 
 permissions: {}
 
 jobs:

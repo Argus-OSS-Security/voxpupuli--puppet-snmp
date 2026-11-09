@@ -5,13 +5,14 @@
 name: Release
 
 # yamllint disable-line rule:truthy
-on:
-  push:
-    tags:
-      # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onpushbranchestagsbranches-ignoretags-ignore
-      # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#filter-pattern-cheat-sheet
-      - 'v[0-9]+.[0-9]+.[0-9]+'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onpushbranchestagsbranches-ignoretags-ignore
+#       # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#filter-pattern-cheat-sheet
+#       - 'v[0-9]+.[0-9]+.[0-9]+'
+# 
 permissions:
   contents: write
 

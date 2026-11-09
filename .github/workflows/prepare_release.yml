@@ -4,13 +4,14 @@
 
 name: 'Prepare Release'
 
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Module version to be released. Must be a valid semver string without leading v. (1.2.3)'
-        required: false
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       version:
+#         description: 'Module version to be released. Must be a valid semver string without leading v. (1.2.3)'
+#         required: false
+# 
 permissions:
   contents: write
   pull-requests: write
